@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Match Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Memory Match Game</h1>
+    <div id="game-board"></div>
+    <button onclick="startGame()">Restart Game</button>
+    <p id="move-counter">Moves: 0</p>
+<div id="win-screen" style="display: none;">
+    <h2>🎉 You matched all the cards!</h2>
+    <p id="final-moves"></p>
+    <button onclick="startGame()">Play Again</button>
+</div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
